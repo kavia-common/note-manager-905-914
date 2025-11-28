@@ -1,0 +1,36 @@
+.ui-modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(16,21,50,0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-modal {
+  background: var(--color-surface, #fff);
+  box-shadow: var(--shadow-subtle, 0 1px 2px 0 rgba(16,21,50,0.08));
+  border-radius: var(--radius, 10px);
+  width: 400px;
+  max-width: 90vw;
+  padding: 2em 1.4em;
+  position: relative;
+  animation: fadeInModal 0.2s;
+}
+
+.ui-modal-close {
+  position: absolute;
+  top: 0.7em;
+  right: 1em;
+  background: none;
+  border: none;
+  font-size: 1.7em;
+  cursor: pointer;
+  color: var(--color-text, #111827);
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: translateY(12px);}
+  to { opacity: 1; transform: none;}
+}

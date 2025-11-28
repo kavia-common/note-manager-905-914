@@ -1,0 +1,30 @@
+.ui-btn {
+  border: none;
+  border-radius: var(--radius, 10px);
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-subtle);
+  background: var(--gradient, linear-gradient(90deg, #3b82f6 10%, #f9fafb 100%));
+  color: var(--color-text, #111827);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.ui-btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.ui-btn-secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.ui-btn:active {
+  box-shadow: none;
+}
+
+.ui-btn:focus {
+  outline: 2px solid var(--color-primary);
+}
